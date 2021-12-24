@@ -29,11 +29,15 @@ class Solution:
         """
             Returns true if two trees are the same. Return false otherwise.
         """
-        if(p == None and q == None): # 1. base case, the leafs.
+
+        # if both trees are empty return True
+        if(p == None and q == None):
             return True
-        elif(type(p) != type(q)): # 2. see if only one is None
+        # if one of the trees is empty but the other is not return False
+        elif(type(p) != type(q)): 
             return False
-        elif(p.val != q.val): # 3. see if different values
+        # if one of the values does not match then return False
+        elif(p.val != q.val):
             return False
         
         # 4. each level, checking (p.left q.left) and (p.right q.right)
