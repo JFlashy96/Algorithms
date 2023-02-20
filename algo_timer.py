@@ -1,6 +1,6 @@
 from random import randint
 from timeit import repeat
-
+ 
 def run_sorting_algorithm(algorithm, array):
      # Set up the context and prepare the call to the specified    # algorithm using the supplied array. Only import the
      # algorithm function if it's not the built-in `sorted()`.

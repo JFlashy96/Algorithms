@@ -36,7 +36,6 @@ def decodeString(s):
 		elif c == ']':
 			num = stack.pop()
 			prevString = stack.pop()
-			print(prevString)
 			curString = prevString + num*curString
 		elif c.isdigit():
 			curNum = curNum*10 + int(c)
